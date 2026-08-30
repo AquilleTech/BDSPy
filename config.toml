@@ -1,0 +1,30 @@
+[server]
+host = "0.0.0.0"
+port = 19132
+motd = "BDSPy Server"
+level_name = "BDSPy Flat World"
+max_players = 10
+
+[world]
+# Ground layers, bottom to top. Must be exactly these 3 for now (matches the
+# hand-built flat subchunk in server/chunk.py).
+ground_layers = ["cobblestone", "dirt", "grass_block"]
+spawn_x = 0
+spawn_z = 0
+# spawn_y is derived automatically: sits just above the top ground layer.
+
+[player]
+# Items placed in the hotbar on spawn (slots 0-4, in order).
+starting_items = ["grass_block", "dirt", "oak_log", "cobblestone", "oak_planks"]
+starting_stack_size = 64
+
+[chunks]
+# View radius sent to clients, in chunks.
+radius = 4
+
+[logging]
+# DEBUG shows every packet in/out (id, size, encoding details), split-packet
+# reassembly, and ordering buffer activity -- verbose, but exactly what you
+# want when chasing a malformed-packet bug. INFO shows just the high-level
+# join sequence. Options: DEBUG, INFO, WARN, ERROR.
+level = "DEBUG"

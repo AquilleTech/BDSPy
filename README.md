@@ -4,7 +4,7 @@ A Minecraft Bedrock Edition server written from scratch in pure Python.
 No external dependencies -- stdlib only (`socket`, `struct`, `zlib`, `tomllib`).
 Runs on Termux.
 
-#NOTE: This Project is still on heavy development.
+### NOTE: This Project is still on heavy development.
 
 Target client version: **1.26.30** (protocol 1001).
 
